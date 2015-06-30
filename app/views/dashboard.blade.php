@@ -86,7 +86,7 @@
                 <div class="row">
                     <!-- Main Title (hidden on small devices for the statistics to fit) -->
                     <div class="col-md-4 col-lg-6 hidden-xs hidden-sm">
-                        <h1>Welcome <strong>Admin</strong><br><small>You Look Awesome!</small></h1>
+                        <h1>Bienvenido <strong>Demo</strong></h1>
                     </div>
                     <!-- END Main Title -->
 
@@ -95,27 +95,27 @@
                         <div class="row text-center">
                             <div class="col-xs-4 col-sm-3">
                                 <h2 class="animation-hatch">
-                                    $<strong>93.7k</strong><br>
-                                    <small><i class="fa fa-thumbs-o-up"></i> Great</small>
+                                    $<strong>93</strong><br>
+                                    <small><i class="fa fa-thumbs-o-up"></i> Clientes</small>
                                 </h2>
                             </div>
                             <div class="col-xs-4 col-sm-3">
                                 <h2 class="animation-hatch">
-                                    <strong>167k</strong><br>
-                                    <small><i class="fa fa-heart-o"></i> Likes</small>
+                                    <strong>167</strong><br>
+                                    <small><i class="fa fa-heart-o"></i> Campañas</small>
                                 </h2>
                             </div>
                             <div class="col-xs-4 col-sm-3">
                                 <h2 class="animation-hatch">
                                     <strong>101</strong><br>
-                                    <small><i class="fa fa-calendar-o"></i> Events</small>
+                                    <small><i class="fa fa-calendar-o"></i> Eventos</small>
                                 </h2>
                             </div>
                             <!-- We hide the last stat to fit the other 3 on small devices -->
                             <div class="col-sm-3 hidden-xs">
                                 <h2 class="animation-hatch">
                                     <strong>27&deg; C</strong><br>
-                                    <small><i class="fa fa-map-marker"></i> Sydney</small>
+                                    <small><i class="fa fa-map-marker"></i> Hoy</small>
                                 </h2>
                             </div>
                         </div>
@@ -206,10 +206,10 @@
     <!-- Footer -->
     <footer class="clearfix">
         <div class="pull-right">
-            Crafted with <i class="fa fa-heart text-danger"></i> by <a href="http://goo.gl/vNS3I" target="_blank">pixelcave</a>
+            Crafted with <i class="fa fa-heart text-danger"></i> by <a href="http://goo.gl/vNS3I" target="_blank">Ga Comunicación</a>
         </div>
         <div class="pull-left">
-            <span id="year-copy"></span> &copy; <a href="http://goo.gl/TDOSuC" target="_blank">ProUI 2.1</a>
+            <span id="year-copy"></span> &copy; <a href="htttp://www.gacomunicacion.com" target="_blank">Ga Comunicación</a>
         </div>
     </footer>
     <!-- END Footer -->
@@ -220,5 +220,6 @@
 
 @section('scripts')
     @parent()
-
+        {{ HTML::script('/js/pages/widgetsStats.js') }}
+        <script>$(function(){ WidgetsStats.init(); });</script>
 @stop
