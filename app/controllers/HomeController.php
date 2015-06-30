@@ -15,9 +15,32 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function index()
 	{
-		return View::make('hello');
+		return View::make('login');
 	}
 
+	public function dashboard(){
+		return View::make('dashboard');
+	}
+
+	// Recepcion de informacion de loguero
+	public function login() {
+
+			$username 	= Input::get('username');
+			$password 	= Input::get('password');
+
+		if ( $username == 'demo' && $password == 'demo' ) {
+			return Redirect::to('dashboard');
+		}
+
+		return Redirect::to('login')->with('error_message', 'Usuario y/o contraseña invalidos');
+
+	}
+
+	// Cierre de session
+	public function logout() {
+		Auth::logout();
+		return Redirect::to('login');
+	}
 }
