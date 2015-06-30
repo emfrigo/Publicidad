@@ -143,6 +143,15 @@ $.show_modal = function(_img_path,type,_back_to) {
         bd.animate({scrollTop: (target.offset().top)},200);
     };
 
+var load_catalog = function () {
+    console.log( 'dentro' );
+    $('.map-iframe').hide();
+    $('.frame-catalog').show();
+
+
+}
+
+
 var load = function( state, option ) {
     var _complete_name = 'default value';
     var _complete_type = 'default';
@@ -382,7 +391,7 @@ var load = function( state, option ) {
 
 // Boton envio del formulario
 $('.btn-modal-map').click(function(e){
-	var choice;
+	var choice =  'default';
 
 	var choices = {
 			'btn-consultar-titulares' : function(){
@@ -414,8 +423,11 @@ $('.btn-modal-map').click(function(e){
 			}
 	}; //FIN COLECCION DE OPCIONES
 
+    console.log( 'Variable disponible : '+ choice + ', valor de this.id: ' + this.id );
+
 	( choices[ this.id ]() || choices[ 'default' ] );
     $("#modal-cst-info").modal('hide');
-	load( selected_state, choice );
-
+	//load( selected_state, choice );
+    console.log( 'antes de funcion' );
+    load_catalog();
 });

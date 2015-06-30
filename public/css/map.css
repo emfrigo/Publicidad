@@ -2,6 +2,17 @@
     background: white;   
 }
 
+.frame-catalog{
+    display: none;
+}
+
+iframe{
+    height: 800px;
+    width: 100%;
+    border: none;
+}
+
+
 button > img{
     height: 62px;
     width: 100px;
