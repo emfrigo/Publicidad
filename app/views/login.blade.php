@@ -54,7 +54,7 @@
         <div id="login-container" class="animation-fadeIn">
             <!-- Login Title -->
             <div class="login-title text-center">
-                <h1><i class="gi gi-flash"></i> <strong>Publicidad</strong><br><small><strong>Ingreso a la Aplicación</strong></small></h1>
+                <h1><i class="gi gi-snowflake"></i> <strong>Publicidad</strong><br><small><strong>Ingreso a la Aplicación</strong></small></h1>
             </div>
             <!-- END Login Title -->
 

@@ -83,32 +83,23 @@
                    <div class="content-header">
                        <div class="header-section">
                            <h1>
-                               <i class="fa fa-table"></i>Datatables<br><small>HTML tables can become fully dynamic with cool features!</small>
+                               <i class="fa fa-table"></i>Clientes<br><small> lista de clientes actualez de la agencia</small>
                            </h1>
                        </div>
                    </div>
-                   <ul class="breadcrumb breadcrumb-top">
-                       <li>Tables</li>
-                       <li><a href="">Datatables</a></li>
-                   </ul>
                    <!-- END Datatables Header -->
 
                    <!-- Datatables Content -->
                    <div class="block full">
-                       <div class="block-title">
-                           <h2><strong>Datatables</strong> integration</h2>
-                       </div>
-                       <p><a href="https://datatables.net/" target="_blank">DataTables</a> is a plug-in for the Jquery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, which will add advanced interaction controls to any HTML table. It is integrated with template's design and it offers many features such as on-the-fly filtering and variable length pagination.</p>
-
                        <div class="table-responsive">
                            <table id="example-datatable" class="table table-vcenter table-condensed table-bordered">
                                <thead>
                                    <tr>
                                        <th class="text-center">ID</th>
                                        <th class="text-center"><i class="gi gi-user"></i></th>
-                                       <th>Client</th>
-                                       <th>Email</th>
-                                       <th>Subscription</th>
+                                       <th>Cliente</th>
+                                       <th>Contacto</th>
+                                       <th>Status</th>
                                        <th class="text-center">Actions</th>
                                    </tr>
                                </thead>
@@ -901,16 +892,16 @@
                </div>
                <!-- END Page Content -->
 
-                <!-- Footer -->
-                <footer class="clearfix">
-                    <div class="pull-right">
-                        Crafted with <i class="fa fa-heart text-danger"></i> by <a href="http://goo.gl/vNS3I" target="_blank">pixelcave</a>
-                    </div>
-                    <div class="pull-left">
-                        <span id="year-copy"></span> &copy; <a href="http://goo.gl/TDOSuC" target="_blank">ProUI 2.1</a>
-                    </div>
-                </footer>
-                <!-- END Footer -->
+               <!-- Footer -->
+               <footer class="clearfix">
+                   <div class="pull-right">
+                       Crafted with <i class="fa fa-heart text-danger"></i> by <a href="http://goo.gl/vNS3I" target="_blank">Ga Comunicación</a>
+                   </div>
+                   <div class="pull-left">
+                       <span id="year-copy"></span> &copy; <a href="htttp://www.gacomunicacion.com" target="_blank">Ga Comunicación</a>
+                   </div>
+               </footer>
+               <!-- END Footer -->
             </div>
             <!-- END Main Container -->
         </div>
@@ -920,6 +911,6 @@
 @section ('scripts')
     @parent
 
-     {{ HTML::js/pages/tablesDatatables.js"></script>
+     {{ HTML::script('js/pages/tablesDatatables.js') }}
      <script>$(function(){ TablesDatatables.init(); });</script>
 @stop

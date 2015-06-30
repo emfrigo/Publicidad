@@ -8,69 +8,6 @@ var WidgetsStats = function() {
 
     return {
         init: function() {
-            /* Mini Bar/Line Charts with jquery.sparkline plugin, for more examples you can check out http://omnipotent.net/jquery.sparkline/#s-about */
-            var miniChartBarOptions = {
-                type: 'bar',
-                barWidth: 8,
-                barSpacing: 6,
-                height: '80px',
-                tooltipOffsetX: -25,
-                tooltipOffsetY: 20,
-                barColor: '#555555',
-                tooltipPrefix: '+ ',
-                tooltipSuffix: ' Sales',
-                tooltipFormat: '{{prefix}}{{value}}{{suffix}}'
-            };
-            $('#mini-chart-bar1').sparkline('html', miniChartBarOptions);
-
-            miniChartBarOptions['barColor'] = '#1bbae1';
-            miniChartBarOptions['tooltipPrefix'] = '';
-            miniChartBarOptions['tooltipSuffix'] = ' Projects';
-            $('#mini-chart-bar2').sparkline('html', miniChartBarOptions);
-
-            miniChartBarOptions['barColor'] = '#e74c3c';
-            miniChartBarOptions['tooltipPrefix'] = '+ ';
-            miniChartBarOptions['tooltipSuffix'] = ' Photos';
-            $('#mini-chart-bar3').sparkline('html', miniChartBarOptions);
-
-            miniChartBarOptions['barColor'] = '#9b59b6';
-            miniChartBarOptions['tooltipPrefix'] = '';
-            miniChartBarOptions['tooltipSuffix'] = ' Tickets';
-            $('#mini-chart-bar4').sparkline('html', miniChartBarOptions);
-
-            var miniChartLineOptions = {
-                type: 'line',
-                width: '270px',
-                height: '150px',
-                tooltipOffsetX: -25,
-                tooltipOffsetY: 20,
-                lineWidth: 1,
-                lineColor: '#3b3f40',
-                fillColor: '#399399',
-                spotColor: '#ffffff',
-                minSpotColor: '#ffffff',
-                maxSpotColor: '#ffffff',
-                highlightSpotColor: '#ffffff',
-                highlightLineColor: '#ffffff',
-                spotRadius: 5,
-                tooltipPrefix: '$ ',
-                tooltipSuffix: '',
-                tooltipFormat: '{{prefix}}{{y}}{{suffix}}'
-            };
-            $('#mini-chart-line1').sparkline('html', miniChartLineOptions);
-
-            miniChartLineOptions['lineColor'] = '#333333';
-            miniChartLineOptions['fillColor'] = '#777777';
-            miniChartLineOptions['tooltipPrefix'] = '+ ';
-            miniChartLineOptions['tooltipSuffix'] = ' Sales';
-            $('#mini-chart-line2').sparkline('html', miniChartLineOptions);
-
-            miniChartLineOptions['lineColor'] = '#4a2e2b';
-            miniChartLineOptions['fillColor'] = '#b33c2e';
-            miniChartLineOptions['tooltipPrefix'] = '';
-            miniChartLineOptions['tooltipSuffix'] = ' Downloads';
-            $('#mini-chart-line3').sparkline('html', miniChartLineOptions);
-
             /*
              * Flot 0.8.2 Jquery plugin is used for charts
              *
@@ -88,6 +25,8 @@ var WidgetsStats = function() {
 
             // Array with month labels used in both charts
             var chartMonths = [[1, 'January'], [2, 'February'], [3, 'March'], [4, 'April'], [5, 'May'], [6, 'June'], [7, 'July'], [8, 'August'], [9, 'September'], [10, 'October'], [11, 'November'], [12, 'December']];
+
+            console.log('Hola vine a saludar');
 
             // Widget 1 Chart
             $.plot(chartWidget1,
