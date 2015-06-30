@@ -382,7 +382,7 @@ var load = function( state, option ) {
 
 // Boton envio del formulario
 $('.btn-modal-map').click(function(e){
-	var choice;
+	var choice =  'default';
 
 	var choices = {
 			'btn-consultar-titulares' : function(){
@@ -414,8 +414,10 @@ $('.btn-modal-map').click(function(e){
 			}
 	}; //FIN COLECCION DE OPCIONES
 
+    console.log( 'Variable disponible : '+ choice + ', valor de this.id: ' + this.id );
+
 	( choices[ this.id ]() || choices[ 'default' ] );
     $("#modal-cst-info").modal('hide');
-	load( selected_state, choice );
+	//load( selected_state, choice );
 
 });
