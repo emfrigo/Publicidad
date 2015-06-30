@@ -83,7 +83,7 @@
                    <div class="content-header">
                        <div class="header-section">
                            <h1>
-                               <i class="fa fa-table"></i>Usuarios<br><small> que pueden acceder al sistema</small>
+                               <i class="fa fa-table"></i>Facturas<br><small> listado de facturas y su status</small>
                            </h1>
                        </div>
                    </div>
