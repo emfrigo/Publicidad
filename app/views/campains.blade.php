@@ -1020,7 +1020,7 @@
                 <!-- Footer -->
                 <footer class="clearfix">
                     <div class="pull-right">
-                        Crafted with <i class="fa fa-heart text-danger"></i> by <a href="http://goo.gl/vNS3I" target="_blank">Ga Comunicación</a>
+                        Crafted with  by <a href="http://goo.gl/vNS3I" target="_blank">Ga Comunicación</a>
                     </div>
                     <div class="pull-left">
                         <span id="year-copy"></span> &copy; <a href="htttp://www.gacomunicacion.com" target="_blank">Ga Comunicación</a>
