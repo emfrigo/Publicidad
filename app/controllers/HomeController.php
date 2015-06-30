@@ -24,6 +24,26 @@ class HomeController extends BaseController {
 		return View::make('dashboard');
 	}
 
+	public function users(){
+		return View::make('users');
+	}
+
+	public function clients(){
+		return View::make('clients');
+	}
+
+	public function billing(){
+		return View::make('billing');
+	}
+
+	public function campains(){
+		return View::make('campains');
+	}
+
+	public function pattern(){
+		return View::make('patterns');
+	}
+
 	// Recepcion de informacion de loguero
 	public function login() {
 

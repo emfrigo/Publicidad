@@ -16,3 +16,15 @@ Route::get('/', 'HomeController@index');
 Route::post('login', 'HomeController@login');
 
 Route::get('dashboard', 'HomeController@dashboard');
+
+Route::get('logout', 'HomeController@logout');
+
+Route::get('users', 'HomeController@users');
+
+Route::get('clients', 'HomeController@clients');
+
+Route::get('billing', 'HomeController@billing');
+
+Route::get('campains', 'HomeController@campains');
+
+Route::get('pattern', 'HomeController@pattern');
