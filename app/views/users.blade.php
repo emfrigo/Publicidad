@@ -96,7 +96,6 @@
                                <thead>
                                    <tr>
                                        <th class="text-center">ID</th>
-                                       <th class="text-center"><i class="gi gi-user"></i></th>
                                        <th>Nombre de Usuario</th>
                                        <th>Correo</th>
                                        <th>Rol</th>
@@ -106,7 +105,6 @@
                                <tbody>
                                    <tr>
                                        <td class="text-center">1</td>
-                                       <td class="text-center"><img src="img/placeholders/avatars/avatar5.jpg" alt="avatar" class="img-circle"></td>
                                        <td><a href="javascript:void(0)">demo</a></td>
                                        <td>user1@thiscompany.com</td>
                                        <td><span class="label label-primary">Admin</span></td>
@@ -119,7 +117,6 @@
                                    </tr>
                                    <tr>
                                        <td class="text-center">2</td>
-                                       <td class="text-center"><img src="img/placeholders/avatars/avatar3.jpg" alt="avatar" class="img-circle"></td>
                                        <td><a href="javascript:void(0)">user2</a></td>
                                        <td>user2@thiscompany.com</td>
                                        <td><span class="label label-warning">Editor</span></td>
