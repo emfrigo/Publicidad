@@ -176,6 +176,16 @@
                        </section>
                        <!-- Fin Mapa de la republica -->
 
+                       <!-- Inicio Mapa de la republica -->
+                       <section class="content frame-catalog">
+                           <div class="box box-solid">
+                               <div id="catalog">
+                               		<iframe src="{{ asset('catalogo.html') }}"></iframe>
+                               </div>
+                           </div>
+                       </section>
+                       <!-- Fin Mapa de la republica -->
+
                        <!-- Modal Mapa -->
                        <div id="modal-cst-info" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                            <div class="modal-dialog modal-lg">
